@@ -26,7 +26,7 @@ export class HomePageComponent implements OnInit{
   }
 
   ngOnInit(){
-    this.mybreakpoint = (window.innerWidth <= 700) ? 1 : (window.innerWidth <= 1200) ? 3: 5;
+    this.mybreakpoint = (window.innerWidth <= 650) ? 1 : (window.innerWidth <= 900) ? 2: (window.innerWidth <= 1400) ? 3 : 5;
   }
 
 
