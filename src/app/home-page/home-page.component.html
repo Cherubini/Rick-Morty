@@ -1,7 +1,8 @@
 
+<app-actions></app-actions>
 
-<mat-grid-list [cols]="mybreakpoint" rowHeight="1:2" (window:resize)="handleSize($event)" >
-  <mat-grid-tile *ngFor="let character of characters">
+<mat-grid-list [cols]="mybreakpoint" rowHeight="1:2">
+  <mat-grid-tile *ngFor="let character of charactersSubjectValue">
     <app-character-sheet [character]="character" class="grid-card"></app-character-sheet>
   </mat-grid-tile>
 </mat-grid-list>
